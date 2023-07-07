@@ -18,17 +18,18 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## App Functions
 
-To learn more about Next.js, take a look at the following resources:
+Fetches Countries from the Countries api and renders each Country and the name, flag and population amd capital city.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Click on an individual country and it will show the flag, country name,
+capital city , currency, population and languages which is fetched from an additional call.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+The service does not return much detail about bordering countries therfore I could only add the Country name shorthand.
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Things To Imporve
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Styling could be imporved. Also, adding more features like a home page search and filter (possibly by region)
+
+Adding some error handling and unit/integration tests.
